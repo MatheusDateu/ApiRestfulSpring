@@ -1,24 +1,27 @@
 package com.ifrr.projetosp4.dao;
 
+import java.util.List;
+
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
 
 import com.ifrr.projetosp4.ProjetoSp4Application;
-import com.ifrr.projetosp4.bean.EmpresaBean;
+import com.ifrr.projetosp4.bean.RoboBean;
 
-public class CelularDaoTesteDeletar {
+public class RoboDaoTesteListar {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new SpringApplicationBuilder(ProjetoSp4Application.class)
 				.web(WebApplicationType.NONE)
 				.run(args);
 		
-		EmpresaDao cd = applicationContext.getBean(EmpresaDao.class);
+		RoboDao cd = applicationContext.getBean(RoboDao.class);
 		
-		EmpresaBean c = new EmpresaBean();
-		c.setCodigo(1);
+		List<RoboBean> contas = cd.listar();
 		
-		cd.deletar(c);
+		for(RoboBean c : contas) {
+			System.out.println(c.getNome());
+		}
 		
 	}
 }
