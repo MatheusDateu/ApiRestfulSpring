@@ -5,3 +5,6 @@ insert into empresas(nome, cnpj, telefone, endereco, email) values('Havan', '345
 insert into empresas(nome, cnpj, telefone, endereco, email) values('Sonda', '4567890123', '(00)00000-0005', 'Rua Teste3, 011', 'email.sonda@gmail.com');
 insert into empresas(nome, cnpj, telefone, endereco, email) values('Tesla', '5678901234', '(00)00000-0006', 'Rua Teste4, 110', 'email.tesla@gmail.com');
 insert into empresas(nome, cnpj, telefone, endereco, email) values('HP', '6789012345', '(00)00000-0007', 'Rua Teste5, 111', 'email.hp@gmail.com');
+
+insert into robos(nome, url) values('Alerta Sobre Novos Processos SEI via Whatsapp', 'https://www.youtube.com/embed/P0IjIJKtzoY');
+insert into robos(nome, url) values('Realiza Tranferências de Bens Móveis', 'https://www.youtube-nocookie.com/embed/bnAzQzBI4fQ');
